@@ -1,0 +1,36 @@
+header {
+  background-color: var(--background-tertiary-color);
+  padding: 38px 48px;
+}
+
+.menu-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.menu-item {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: var(--menu-text-weight);
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    background-color: color-mix(
+      in srgb,
+      var(--background-tertiary-color) 80%,
+      transparent
+    );
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    background-color: var(--background-tertiary-color);
+  }
+  .menu-item:hover {
+    color: var(--secondary-color);
+    box-shadow:10cap;
+}
+}
